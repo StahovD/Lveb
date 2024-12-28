@@ -10,7 +10,7 @@ body {
 
 /* Шапка сайту */
 header {
-    background: #2C3E50; 
+    background: #3b6c9e; 
     color: #fff;
     padding: 30px 0;
     text-align: center;
@@ -161,24 +161,24 @@ footer {
  /* Контейнер для посилань */
 .link-container {
     position: absolute;
-    top: 10px;  /* Відстань від верхнього краю */
-    right: 10px;  /* Відстань від правого краю */
-    display: flex;  /* Використовуємо flexbox для горизонтального розташування */
-    gap: 10px;  /* Відступ між посиланнями */
+    top: 10px;  
+    right: 10px;  
+    display: flex; 
+    gap: 10px;  
 }
 /* Стилі для вирівнювання посилань у правому верхньому кутку */
 .top-right-link {
 
-    top: 10px; /* Відстань від верхнього краю */
-    right: 10px; /* Відстань від правого краю */
-    margin-left: 10px; /* Відстань між посиланнями */
-    text-decoration: none; /* Видалити підкреслення */
-    color: #000; /* Колір тексту */
-    font-size: 16px; /* Розмір шрифта */
+    top: 10px; 
+    right: 10px; 
+    margin-left: 10px; 
+    text-decoration: none; 
+    color: #000; 
+    font-size: 16px; 
 }
 
 .top-right-link:first-child {
-    margin-left: 0; /* Залишити відстань тільки між посиланнями */
+    margin-left: 0; 
 }
 
 /* Модальне вікно */
@@ -188,11 +188,11 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий фон */
-    display: flex; /* Включаємо флексбокс */
-    justify-content: center; /* Горизонтальне центрування */
-    align-items: center; /* Вертикальне центрування */
-    z-index: 1000; /* Високий пріоритет на екранні елементи */
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1000;
 }
 
 /* Вміст модального вікна */
@@ -203,7 +203,7 @@ footer {
     width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
-    animation: slideIn 0.3s ease-out; /* Анімація входу */
+    animation: slideIn 0.3s ease-out; 
 }
 
 /* Кнопка закриття модального вікна */
@@ -236,7 +236,7 @@ label {
 input {
     padding: 8px;
     margin-top: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
@@ -244,7 +244,7 @@ input {
 
 button {
     padding: 12px;
-    background-color: #4CAF50; /* Зелена кнопка */
+    background-color: #4CAF50; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -286,30 +286,298 @@ p {
 }
 
 .modal-content h2 {
-    text-align: center; /* Центруємо текст заголовка */
-    font-size: 1.5rem;  /* Можна налаштувати розмір шрифту */
-    color: #333;        /* Колір тексту */
-    margin-bottom: 20px; /* Відступ знизу */
+    text-align: center; 
+    font-size: 1.5rem; 
+    color: #333;        
+    margin-bottom: 20px; 
 }
 
 /* Загальні стилі для всіх посилань */
 a {
-    text-decoration: none;  /* Видалити підкреслення */
-    color: white; /* Білий колір для посилань */
-    font-weight: bold; /* Товстий шрифт */
-    padding: 10px 15px; /* Відступи для кращої видимості */
-    display: inline-block; /* Дозволяє додавати відступи */
-    transition: color 0.3s ease, background-color 0.3s ease; /* Плавна зміна кольору */
+    text-decoration: none;  
+    color: white; 
+    font-weight: bold; 
+    padding: 10px 15px; 
+    display: inline-block; 
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 /* Стилі для навігаційних посилань */
 nav a {
-    margin: 0 10px; /* Відступ між посиланнями */
+    margin: 0 10px; 
 }
 
 /* Зміна кольору при наведенні */
 a:hover {
-    color: #2C3E50; /* Темно-синій колір при наведенні */
-    background-color: #BDC3C7; /* Світло-сірий фон при наведенні */
-    border-radius: 5px; /* Заокруглені кути */
+    color: #2C3E50; 
+    background-color: #BDC3C7; 
+    border-radius: 5px; 
+}
+/* Стиль для контейнера пошуку */
+.search-container {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchInput {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Стиль для автомобільних карток */
+.car-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.car-card {
+    width: 30%;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.car-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover; 
+}
+
+.car-card h2 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Загальні стилі для контейнера */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Стиль для заголовка сторінки */
+.page-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-top: 30px;
+}
+
+/* Стиль для введення тексту */
+.intro-text {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/* Стиль для підзаголовків секцій */
+.section-title {
+    font-size: 2em;
+    color: #444;
+    margin-top: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Стиль для тексту в секціях */
+.section-text {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Список переваг */
+.advantages-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.advantages-item {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.advantages-item strong {
+    color: #007bff;
+}
+
+/* Список процесу роботи */
+.process-list {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+.process-item {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* Стилі для списків та кроків */
+ul, ol {
+    margin-left: 20px;
+}
+
+/* Основні стилі для секції контактів */
+.contact-section {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Стиль для заголовка */
+  .contact-title {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Стилі для списку контактів */
+  .contact-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contact-item {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: center
+  }
+  
+  .contact-item strong {
+    font-weight: bold;
+  }
+  
+  /* Стилі для посилання на email */
+  .contact-link {
+    color: #007bff;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .contact-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Стилі для заголовка соціальних мереж */
+  .social-title {
+    font-size: 20px;
+    color: #333;
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  /* Стилі для списку соціальних мереж */
+  .social-links {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .social-link {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    margin: 5px;
+    display: inline-block;
+  }
+  
+  .social-link:hover {
+    text-decoration: underline;
+  }
+/* Основний контейнер для пошукових елементів */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для текстового поля пошуку */
+#searchInput {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Стилі для кнопки пошуку */
+#searchButton {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Зміна кольору кнопки при наведенні */
+#searchButton:hover {
+    background-color: #0056b3;
+}
+
+/* Стилі для селектора сортування */
+#sortSelect {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Оформлення для селектора сортування при фокусі */
+#sortSelect:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.car-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
 }
